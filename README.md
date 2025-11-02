@@ -62,3 +62,12 @@ O sistema permite acompanhar **quem realizou o plantio**, **quando foi colhido**
 - Para qual instituição foi doado  
 
 ---
+
+## Modelo Conceitual 
+<img width="711" height="715" alt="image" src="https://github.com/user-attachments/assets/bf47def5-feb2-4d76-a977-571d463896e8" />
+
+## Modelo Lógico 
+![WhatsApp Image 2025-11-02 at 12 55 22](https://github.com/user-attachments/assets/05213805-ffe6-4b45-ae45-0a65e395c01d)
+
+
+
