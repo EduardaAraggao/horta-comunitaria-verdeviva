@@ -42,7 +42,7 @@ O sistema permite acompanhar **quem realizou o plantio**, **quando foi colhido**
 | **Planta** | `id`, `nome`, `tipo`, `tempoCultivo` | Espécies cultivadas (hortaliças, legumes, etc). |
 | **Cultivo** | `id`, `data`, `qtd (kg)` | Registro de quem plantou, o que e quando. |
 | **Colheita** | `id`, `data`, `qtd (kg)` | Registro da colheita feita em um canteiro. |
-| **ItemColheita** | `quantidadeDoada (kg)` | Ligação entre uma colheita e suas doações. |
+| **ItemColheita** | `id`, `data`, `qtd (kg)`| Ligação entre uma colheita e suas doações. |
 | **Doação** | `id`, `dataDoacao`, `quantidadeTotal (kg)` | Registro de alimentos doados a instituições. |
 | **Instituição** | `id`, `nome`, `responsavel`, `telefone`, `endereco` | Entidade que recebe as doações. |
 | **Endereço** | `rua`, `numero`, `bairro`, `cidade`, `estado` | Localização da instituição. |
@@ -66,7 +66,110 @@ O sistema permite acompanhar **quem realizou o plantio**, **quando foi colhido**
 
 
 ## 🌿 Modelo Lógico
-![Modelo Conceitual da Horta](./modelo-logico.png)
+![Modelo Conceitual da Horta](./modelo-logico.png)  
+
+## 💻 Modelo Físico 
+
+( em andamento) 
+
+# 🌿 Sistema de Gestão da Horta Comunitária VerdeViva
+
+O **Sistema VerdeViva** foi criado para auxiliar no gerenciamento das atividades da horta comunitária, permitindo o registro de voluntários, cultivos, colheitas e doações realizadas para instituições sociais.  
+Este documento descreve as **chaves primárias (PK)** e **estrangeiras (FK)** utilizadas no banco de dados do projeto.
+
+---
+
+## 🧩 Entidades e Relacionamentos
+
+### 🧑‍🌾 Voluntário
+- **PK:** `id`
+- Representa os voluntários responsáveis pelos plantios e cuidados com os canteiros.
+
+---
+
+### 🌱 Canteiro
+- **PK:** `id`
+- Contém informações sobre a localização e tipo de solo de cada canteiro.
+
+---
+
+### 🪴 Planta
+- **PK:** `id`
+- Armazena as espécies de plantas cultivadas na horta.
+
+---
+
+### 🌾 Cultivo
+- **PK:** `id`
+- **FKs:**
+  - `idVoluntario` → `voluntario.id`
+  - `idPlanta` → `planta.id`
+  - `idCanteiro` → `canteiro.id`
+- 📘 Registra **quem plantou**, **o que foi plantado**, **onde** e **quando**.
+
+---
+
+### 🧺 Colheita
+- **PK:** `id`
+- **FK:** `idCultivo` → `cultivo.id`
+- 📘 Cada colheita está associada a um cultivo específico, com data e quantidade colhida.
+
+---
+
+### 🎁 Doação
+- **PK:** `id`
+- **FK:** `idInstituicao` → `instituicao.id`
+- 📘 Registra as doações realizadas para instituições parceiras.
+
+---
+
+### 🪣 ItemColheita
+- **PK (composta):** `colheita_id`, `doacao_id`
+- **FKs:**
+  - `colheita_id` → `colheita.id`
+  - `doacao_id` → `doacao.id`
+- 📘 Permite que **uma colheita gere várias doações** e **uma doação contenha itens de várias colheitas**.
+
+---
+
+### 🏛️ Instituição
+- **PK:** `id`
+- 📘 Representa as instituições sociais que recebem as doações de alimentos.
+
+---
+
+### ☎️ Telefone
+- **PK:** `id`
+- **FK:** `idInstituicao` → `instituicao.id`
+- 📘 Cada instituição pode ter um ou mais telefones cadastrados.
+
+---
+
+### 🏠 Endereço
+- **PK:** `id`
+- **FK:** `idInstituicao` → `instituicao.id`
+- 📘 Armazena o endereço completo de cada instituição parceira.
+
+---
+
+## 🧾 Resumo das Chaves
+
+| 🗂️ **Tabela** | 🔑 **Chave Primária (PK)** | 🔗 **Chaves Estrangeiras (FK)** |
+|----------------|-----------------------------|---------------------------------|
+| **voluntario** | `id` | — |
+| **canteiro** | `id` | — |
+| **planta** | `id` | — |
+| **cultivo** | `id` | `idVoluntario → voluntario.id`<br>`idPlanta → planta.id`<br>`idCanteiro → canteiro.id` |
+| **colheita** | `id` | `idCultivo → cultivo.id` |
+| **doacao** | `id` | `idInstituicao → instituicao.id` |
+| **itemColheita** | `colheita_id`, `doacao_id` | `colheita_id → colheita.id`<br>`doacao_id → doacao.id` |
+| **instituicao** | `id` | — |
+| **telefone** | `id` | `idInstituicao → instituicao.id` |
+| **endereco** | `id` | `idInstituicao → instituicao.id` |
+
+---
+
+## 🌾 Fluxo de Dados Simplificado
 
 
 
