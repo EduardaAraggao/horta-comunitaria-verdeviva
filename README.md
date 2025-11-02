@@ -65,4 +65,8 @@ O sistema permite acompanhar **quem realizou o plantio**, **quando foi colhido**
 ![Modelo Conceitual da Horta](./verdeviva.png)
 
 
+## 🌿 Modelo Lógico
+![Modelo Conceitual da Horta](./WhatsAppImage2025-11-02at12.55.22.jpeg)
+
+
 
