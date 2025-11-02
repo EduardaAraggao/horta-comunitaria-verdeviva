@@ -62,11 +62,11 @@ O sistema permite acompanhar **quem realizou o plantio**, **quando foi colhido**
 - Para qual instituição foi doado  
 
 ## 🌾 Modelo Conceitual (Diagrama ER)
-![Modelo Conceitual da Horta](./verdeviva.png)
+![Modelo Conceitual da Horta](./modelo-conceitual.png)
 
 
 ## 🌿 Modelo Lógico
-![Modelo Conceitual da Horta](./WhatsAppImage2025-11-02at12.55.22.jpeg)
+![Modelo Conceitual da Horta](./modelo-logico.png)
 
 
 
