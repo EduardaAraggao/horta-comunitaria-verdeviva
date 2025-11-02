@@ -9,6 +9,8 @@ turma05PEc1 - JavaScript+Node
 # Sobre o projeto
 
 > Projeto desenvolvido como parte do curso **Bolsa Futuro Digital / Softex PE**, para gerenciamento de hortas comunitárias administradas por voluntários.
+> <img width="500" height="331" alt="image" src="https://github.com/user-attachments/assets/d92ba464-147e-4909-957c-2dd0e913141c" />
+
 
 ---
 
