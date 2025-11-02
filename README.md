@@ -72,11 +72,6 @@ O sistema permite acompanhar **quem realizou o plantio**, **quando foi colhido**
 
 ( em andamento) 
 
-# 🌿 Sistema de Gestão da Horta Comunitária VerdeViva
-
-O **Sistema VerdeViva** foi criado para auxiliar no gerenciamento das atividades da horta comunitária, permitindo o registro de voluntários, cultivos, colheitas e doações realizadas para instituições sociais.  
-Este documento descreve as **chaves primárias (PK)** e **estrangeiras (FK)** utilizadas no banco de dados do projeto.
-
 ---
 
 ## 🧩 Entidades e Relacionamentos
@@ -169,7 +164,7 @@ Este documento descreve as **chaves primárias (PK)** e **estrangeiras (FK)** ut
 
 ---
 
-## 🌾 Fluxo de Dados Simplificado
+
 
 
 
