@@ -2,7 +2,7 @@
 # 🌿 Sistema de Gestão da Horta Comunitária VerdeViva
 Treinandas: Jhulia Eduarda e Maria Eduarda                                                   
 Professor: Silvio Montes  
-turma05PEc1 - JavaScript+Node
+turma05PEc1 - BackEnd-JavaScript+Node
 
 
 
