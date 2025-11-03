@@ -4,9 +4,9 @@ Treinandas: Jhulia Eduarda e Maria Eduarda
 Professor: Silvio Montes  
 turma05PEc1 - JavaScript+Node
 
-<img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Food/Tomato.png" alt="Tomato" width="25" height="25" />
 
-# Sobre o projeto
+
+# Sobre o projeto <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/People%20with%20professions/Farmer%20Light%20Skin%20Tone.png" alt="Farmer Light Skin Tone" width="25" height="25" />
 
 > Projeto desenvolvido como parte do curso **Bolsa Futuro Digital / Softex PE**, para gerenciamento de hortas comunitárias administradas por voluntários.
 
