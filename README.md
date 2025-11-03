@@ -165,3 +165,83 @@ O sistema permite acompanhar **quem realizou o plantio**, **quando foi colhido**
 ## 💻 Modelo Físico 
 
 [Visualizar o Manual do Projeto](hortaverdeviva.sql.pdf) 
+
+
+🧱 Estrutura do Banco de Dados
+O banco de dados hortaverdeviva foi criado com as seguintes tabelas:
+
+voluntario: Cadastro de pessoas que atuam na horta
+
+planta: Informações sobre as espécies cultivadas
+
+instituicao: Entidades que recebem doações
+
+telefone: Telefones das instituições
+
+endereco: Endereços das instituições
+
+canteiro: Local físico onde as plantas são cultivadas
+
+doacao: Registro de doações realizadas
+
+cultivo: Plantio realizado por voluntários
+
+colheita: Registro das colheitas feitas
+
+itemColheita: Relação entre colheitas e doações
+
+Todas as tabelas foram criadas com integridade referencial via chaves estrangeiras e codificação UTF-8.
+
+📥 Dados Inseridos
+Foram adicionados dados fictícios para testes e demonstração:
+
+5 voluntários com diferentes funções
+
+5 plantas com tipos e tempos de cultivo variados
+
+5 instituições com responsáveis e contatos
+
+Telefones e endereços vinculados às instituições
+
+5 canteiros com diferentes tipos de solo
+
+Cultivos realizados por voluntários em diferentes datas
+
+Colheitas associadas aos cultivos
+
+Doações feitas pelas instituições
+
+Itens de colheita vinculados às doações
+
+🔍 Consultas SQL Implementadas
+As principais consultas realizadas incluem:
+
+Listagem de voluntários e funções
+
+Plantas cultivadas por canteiro com data de plantio
+
+Voluntários e as plantas que cultivam
+
+Colheitas realizadas por canteiro e quantidade
+
+Instituições que recebem doações e os volumes doados
+
+Total de quilos doados por instituição
+
+Canteiros sem colheita registrada
+
+Voluntário com maior número de cultivos
+
+Plantas ainda não colhidas
+
+Doações realizadas em setembro de 2025
+
+🛠️ Tecnologias Utilizadas
+MySQL: Sistema de gerenciamento de banco de dados
+
+SQL: Linguagem para definição e manipulação dos dados
+
+Markdown: Documentação do projeto
+
+📌 Observações
+Este projeto pode ser expandido com funcionalidades como controle de estoque, relatórios de produtividade, e integração com sistemas web para visualização dos dados.
