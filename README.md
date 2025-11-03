@@ -4,7 +4,7 @@ Treinandas: Jhulia Eduarda e Maria Eduarda
 Professor: Silvio Montes  
 turma05PEc1 - JavaScript+Node
 
-https://www.google.com/url?sa=i&url=https%3A%2F%2Fes.pinterest.com%2Fpin%2F618822805084027583%2F&psig=AOvVaw3OaR_RTT7VQACHjrmLQkzt&ust=1762248792584000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCMjYk73W1ZADFQAAAAAdAAAAABAL
+<img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Food/Tomato.png" alt="Tomato" width="25" height="25" />
 
 # Sobre o projeto
 
