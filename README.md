@@ -192,7 +192,7 @@ itemColheita: Relação entre colheitas e doações
 
 Todas as tabelas foram criadas com integridade referencial via chaves estrangeiras e codificação UTF-8.
 
-##📥 Dados Inseridos
+## 📥 Dados Inseridos
 Foram adicionados dados fictícios para testes e demonstração:
 
 5 voluntários com diferentes funções
@@ -213,7 +213,7 @@ Doações feitas pelas instituições
 
 Itens de colheita vinculados às doações
 
-##🔍 Consultas SQL Implementadas
+## 🔍 Consultas SQL Implementadas
 As principais consultas realizadas incluem:
 
 Listagem de voluntários e funções
@@ -236,12 +236,12 @@ Plantas ainda não colhidas
 
 Doações realizadas em setembro de 2025
 
-##🛠️ Tecnologias Utilizadas
+## 🛠️ Tecnologias Utilizadas
 MySQL: Sistema de gerenciamento de banco de dados
 
 SQL: Linguagem para definição e manipulação dos dados
 
 ##Markdown: Documentação do projeto
 
-📌 Observações
+## 📌 Observações
 Este projeto pode ser expandido com funcionalidades como controle de estoque, relatórios de produtividade, e integração com sistemas web para visualização dos dados.
